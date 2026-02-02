@@ -13,8 +13,7 @@ import java.time.OffsetDateTime;
 @RestController
 @RequestMapping(
         value = "transacao",
-        produces = MediaType.APPLICATION_JSON_VALUE,
-        consumes = MediaType.APPLICATION_JSON_VALUE
+        produces = MediaType.APPLICATION_JSON_VALUE
 )
 @Slf4j
 @RequiredArgsConstructor
