@@ -27,6 +27,7 @@ public class TransacaoController {
         try {
             validarTransacao(transacaoRequest);
             transacaoRepository.add(transacaoRequest);
+            log.info("Transacao adicionada com sucesso!");
             return ResponseEntity.status(HttpStatus.CREATED).build();
         } catch (IllegalArgumentException illegalArgumentException) {
             log.warn("Falha na validação: {}", illegalArgumentException.getMessage());
